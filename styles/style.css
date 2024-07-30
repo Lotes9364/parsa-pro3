@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background:url('https://wallpapercave.com/uwp/uwp4232861.png') no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.burger-menu {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    transition: all 500ms ease-in-out;
+}
+
+.burger-menu.hidden {
+    right: -30%;
+}
+
+.burger-menu.show {
+    right: 0;
+}
+
+ul > input{
+    display: block;
+    margin: 0 auto;
+}
+
+ul > button{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    width: 15%;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+ul > button:hover{
+    background-color: #75A47F;
+    transition: 0.5s;
+}
+
+ul li{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+
+ul li:last-child {
+    margin-bottom: 0 !important;
+}
+
+ul li:hover{
+    border: 2px solid black;
+    border-radius: 25px;
+    -webkit-box-shadow: -9px 10px 7px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 10px 7px 4px rgba(0,0,0,0.75);
+    box-shadow: -9px 10px 7px 4px rgba(0,0,0,0.75);
+}
+ul li a {
+    color: #000;
+    font-size: 20px;
+}
+ul li a:hover {
+    color:#75A47F ;
+    transition: 0.5s;
+}
+header {
+    height: 10vh;
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #75A47F;
+    font-size: 70px;
+}
+
+.menu {
+    width: 20%;
+
+}
+
+.menu-list{
+    margin-top: 40px;
+
+}
+
+.top{
+    background-color: #75A47F;
+}
+
+.top > p{
+    margin-bottom: 10px;
+}
+.menu-items-container
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.close-btn{
+    font-size: 32px;
+    margin:3px 5px 0 0  ;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.menu-items-container i {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+input{
+    padding:20px;
+    border: 2px;
+}
+
+main {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .content h2 {
+    font-size: 70px;
+    color: white;
+}
+
+main .content p {
+    font-size: 50px;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    appearance: none;
+    border: 1px black solid;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-size: large;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 18px 40px;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255) 50%,#75A47F 50%);
+    background-size: 200% 200%;
+    transition: 0.4s ease-out;
+}
+.btn:hover{
+    background-position: bottom ;
+    color:white;
+}
